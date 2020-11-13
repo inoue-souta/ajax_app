@@ -8,9 +8,9 @@ class PostsController < ApplicationController
     render json:{ post: post }
   end
 
-  def create
-    Post.create(content: params[:content])
-  end
+  # def create
+  #   Post.create(content: params[:content])
+  # end
 
   def checked
     post = Post.find(params[:id])
